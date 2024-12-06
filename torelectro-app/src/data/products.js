@@ -171,12 +171,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/1/main.png`,
+     main: `./assets/product/pvc/1/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/1/1.png',
-       2: '/src/assets/product/pvc/1/2.png',
-       3: '/src/assets/product/pvc/1/3.png',
+       1: './assets/product/pvc/1/1.png',
+       2: './assets/product/pvc/1/2.png',
+       3: './assets/product/pvc/1/3.png',
       },
      ],
     },
@@ -351,12 +351,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/1/main.png`,
+     main: `./assets/product/pvc/1/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/1/1.png',
-       2: '/src/assets/product/pvc/1/2.png',
-       3: '/src/assets/product/pvc/1/3.png',
+       1: './assets/product/pvc/1/1.png',
+       2: './assets/product/pvc/1/2.png',
+       3: './assets/product/pvc/1/3.png',
       },
      ],
     },
@@ -486,12 +486,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/3/main.png`,
+     main: `./assets/product/pvc/3/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/3/1.png',
-       2: '/src/assets/product/pvc/3/2.png',
-       3: '/src/assets/product/pvc/3/3.png',
+       1: './assets/product/pvc/3/1.png',
+       2: './assets/product/pvc/3/2.png',
+       3: './assets/product/pvc/3/3.png',
       },
      ],
     },
@@ -621,12 +621,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/3/main.png`,
+     main: `./assets/product/pvc/3/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/3/1.png',
-       2: '/src/assets/product/pvc/3/2.png',
-       3: '/src/assets/product/pvc/3/3.png',
+       1: './assets/product/pvc/3/1.png',
+       2: './assets/product/pvc/3/2.png',
+       3: './assets/product/pvc/3/3.png',
       },
      ],
     },
@@ -777,12 +777,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/5/main.png`,
+     main: `./assets/product/pvc/5/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/5/1.png',
-       2: '/src/assets/product/pvc/5/2.png',
-       3: '/src/assets/product/pvc/5/3.png',
+       1: './assets/product/pvc/5/1.png',
+       2: './assets/product/pvc/5/2.png',
+       3: './assets/product/pvc/5/3.png',
       },
      ],
     },
@@ -933,12 +933,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/5/main.png`,
+     main: `./assets/product/pvc/5/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/5/1.png',
-       2: '/src/assets/product/pvc/5/2.png',
-       3: '/src/assets/product/pvc/5/3.png',
+       1: './assets/product/pvc/5/1.png',
+       2: './assets/product/pvc/5/2.png',
+       3: './assets/product/pvc/5/3.png',
       },
      ],
     },
@@ -1090,12 +1090,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/4/main.png`,
+     main: `./assets/product/pvc/4/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/4/1.png',
-       2: '/src/assets/product/pvc/4/2.png',
-       3: '/src/assets/product/pvc/4/3.png',
+       1: './assets/product/pvc/4/1.png',
+       2: './assets/product/pvc/4/2.png',
+       3: './assets/product/pvc/4/3.png',
       },
      ],
     },
@@ -1246,12 +1246,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/6/main.png`,
+     main: `./assets/product/pvc/6/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/6/1.png',
-       2: '/src/assets/product/pvc/6/2.png',
-       3: '/src/assets/product/pvc/6/3.png',
+       1: './assets/product/pvc/6/1.png',
+       2: './assets/product/pvc/6/2.png',
+       3: './assets/product/pvc/6/3.png',
       },
      ],
     },
@@ -1403,12 +1403,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/7/main.png`,
+     main: `./assets/product/pvc/7/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/7/1.png',
-       2: '/src/assets/product/pvc/7/2.png',
-       3: '/src/assets/product/pvc/7/3.png',
+       1: './assets/product/pvc/7/1.png',
+       2: './assets/product/pvc/7/2.png',
+       3: './assets/product/pvc/7/3.png',
       },
      ],
     },
@@ -1519,12 +1519,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/pvc/10/main.png`,
+     main: `./assets/product/pvc/10/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/pvc/10/1.png',
-       2: '/src/assets/product/pvc/10/2.png',
-       3: '/src/assets/product/pvc/10/3.png',
+       1: './assets/product/pvc/10/1.png',
+       2: './assets/product/pvc/10/2.png',
+       3: './assets/product/pvc/10/3.png',
       },
      ],
     },
@@ -1661,12 +1661,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/ukg/1/main.png`,
+     main: `./assets/product/ukg/1/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/ukg/1/1.png',
-       2: '/src/assets/product/ukg/1/2.png',
-       3: '/src/assets/product/ukg/1/3.png',
+       1: './assets/product/ukg/1/1.png',
+       2: './assets/product/ukg/1/2.png',
+       3: './assets/product/ukg/1/3.png',
       },
      ],
     },
@@ -1798,12 +1798,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/ukg/2/main.png`,
+     main: `./assets/product/ukg/2/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/ukg/2/1.png',
-       2: '/src/assets/product/ukg/2/2.png',
-       3: '/src/assets/product/ukg/2/3.png',
+       1: './assets/product/ukg/2/1.png',
+       2: './assets/product/ukg/2/2.png',
+       3: './assets/product/ukg/2/3.png',
       },
      ],
     },
@@ -1934,12 +1934,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/ukg/3/main.png`,
+     main: `./assets/product/ukg/3/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/ukg/3/1.png',
-       2: '/src/assets/product/ukg/3/2.png',
-       3: '/src/assets/product/ukg/3/3.png',
+       1: './assets/product/ukg/3/1.png',
+       2: './assets/product/ukg/3/2.png',
+       3: './assets/product/ukg/3/3.png',
       },
      ],
     },
@@ -2019,12 +2019,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/ukg/4/main.png`,
+     main: `./assets/product/ukg/4/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/ukg/4/1.png',
-       2: '/src/assets/product/ukg/4/2.png',
-       3: '/src/assets/product/ukg/4/3.png',
+       1: './assets/product/ukg/4/1.png',
+       2: './assets/product/ukg/4/2.png',
+       3: './assets/product/ukg/4/3.png',
       },
      ],
     },
@@ -2142,12 +2142,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/ukg/5/main.png`,
+     main: `./assets/product/ukg/5/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/ukg/5/1.png',
-       2: '/src/assets/product/ukg/5/2.png',
-       3: '/src/assets/product/ukg/5/3.png',
+       1: './assets/product/ukg/5/1.png',
+       2: './assets/product/ukg/5/2.png',
+       3: './assets/product/ukg/5/3.png',
       },
      ],
     },
@@ -2263,12 +2263,12 @@ export const products = [
      },
     ],
     images: {
-     main: `/src/assets/product/ukg/6/main.png`,
+     main: `./assets/product/ukg/6/main.png`,
      gallery: [
       {
-       1: '/src/assets/product/ukg/6/1.png',
-       2: '/src/assets/product/ukg/6/2.png',
-       3: '/src/assets/product/ukg/6/3.png',
+       1: './assets/product/ukg/6/1.png',
+       2: './assets/product/ukg/6/2.png',
+       3: './assets/product/ukg/6/3.png',
       },
      ],
     },
