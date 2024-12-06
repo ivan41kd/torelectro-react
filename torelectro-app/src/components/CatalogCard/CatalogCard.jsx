@@ -13,6 +13,7 @@ export const CatalogCard = ({ product }) => {
    </div>
   );
  };
+
  return (
   <div className='catalog__card swiper-slide'>
    <div className='catalog__card-wrapper'>
