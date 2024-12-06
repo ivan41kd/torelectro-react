@@ -1,3 +1,4 @@
+import presentimg from '../../assets/presentation/laptop_2.png';
 export const Presentation = () => {
  return (
   <section className='presentation' id='presentation'>
@@ -14,11 +15,7 @@ export const Presentation = () => {
       подробная презентация предоставляется исключительно на основании запроса
      </p>
     </div>
-    <img
-     src='src/assets/presentation/laptop_2.png'
-     alt=''
-     className='presentation__img'
-    />
+    <img src={presentimg} alt='' className='presentation__img' />
    </div>
   </section>
  );

@@ -1,3 +1,4 @@
+import consultimg from '../../assets/consultation/tele_2.png';
 export const Consultation = () => {
  return (
   <section className='consultation'>
@@ -23,11 +24,7 @@ export const Consultation = () => {
       бесплатная консультация предоставляется исключительно на основании запроса
      </p>
     </div>
-    <img
-     src='src/assets/consultation/tele_2.png'
-     alt=''
-     className='consultation__img'
-    />
+    <img src={consultimg} alt='' className='consultation__img' />
    </div>
   </section>
  );

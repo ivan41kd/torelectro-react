@@ -1,3 +1,9 @@
+import rac from '../../assets/information/rac.png';
+import racmobile from '../../assets/information/rac-390.png';
+import nad from '../../assets/information/nad.png';
+import nadmobile from '../../assets/information/nad-390.png';
+import pro from '../../assets/information/pro.png';
+import promobile from '../../assets/information/pro-390.png';
 export const Information = () => {
  return (
   <section className='information' id='information'>
@@ -24,16 +30,9 @@ export const Information = () => {
        </p>
       </div>
       <picture>
-       <source
-        srcset='src/assets/information/rac-390.png'
-        media='(max-width:820px)'
-       />
+       <source srcset={racmobile} media='(max-width:820px)' />
 
-       <img
-        src='src/assets/information/rac.png'
-        alt=''
-        className='information__img'
-       />
+       <img src={rac} alt='' className='information__img' />
       </picture>
      </div>
      <div className='information__item'>
@@ -57,16 +56,9 @@ export const Information = () => {
        </p>
       </div>
       <picture>
-       <source
-        srcset='src/assets/information/nad-390.png'
-        media='(max-width:820px)'
-       />
+       <source srcset={nadmobile} media='(max-width:820px)' />
 
-       <img
-        src='src/assets/information/nad.png'
-        alt=''
-        className='information__img'
-       />
+       <img src={nad} alt='' className='information__img' />
       </picture>
      </div>
      <div className='information__item'>
@@ -89,16 +81,9 @@ export const Information = () => {
        </p>
       </div>
       <picture>
-       <source
-        srcset='src/assets/information/pro-390.png'
-        media='(max-width:820px)'
-       />
+       <source srcset={promobile} media='(max-width:820px)' />
 
-       <img
-        src='src/assets/information/pro.png'
-        alt=''
-        className='information__img'
-       />
+       <img src={pro} alt='' className='information__img' />
       </picture>
      </div>
     </div>

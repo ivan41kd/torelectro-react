@@ -1,14 +1,11 @@
 import telegaicon from '../../assets/footer/telegram-logo.svg';
+import logo from '../../assets/footer/footer-logo.png';
 export const Footer = () => {
  return (
   <footer className='footer'>
    <div className='footer__wrapper'>
     <div className='footer__logo-wrapper'>
-     <img
-      src='src/assets/footer/footer-logo.png'
-      className='footer__logo'
-      alt=''
-     />
+     <img src={logo} className='footer__logo' alt='' />
     </div>
     <div className='footer__info'>
      <nav className='footer__nav'>
