@@ -10,9 +10,7 @@
  z-index: 100;
  background: rgba(16, 16, 16, 0.9);
  padding-left: 0;
- padding-right: 17px;
  box-sizing: content-box;
- transform: translateX(10px);
 
  &__wrapper {
   align-items: center;
@@ -94,6 +92,9 @@
   min-height: 30px;
   align-self: flex-end;
   cursor: pointer;
+  background: none;
+  padding: 0;
+  display: block;
  }
 
  &__form-input {

@@ -1,9 +1,3 @@
-import rac from '../../assets/information/rac.png';
-import racmobile from '../../assets/information/rac-390.png';
-import nad from '../../assets/information/nad.png';
-import nadmobile from '../../assets/information/nad-390.png';
-import pro from '../../assets/information/pro.png';
-import promobile from '../../assets/information/pro-390.png';
 export const Information = () => {
  return (
   <section className='information' id='information'>
@@ -30,9 +24,9 @@ export const Information = () => {
        </p>
       </div>
       <picture>
-       <source srcset={racmobile} media='(max-width:820px)' />
+       <source srcSet={'/information/rac-390.png'} media='(max-width:820px)' />
 
-       <img src={rac} alt='' className='information__img' />
+       <img src={'/information/rac.png'} alt='' className='information__img' />
       </picture>
      </div>
      <div className='information__item'>
@@ -56,9 +50,8 @@ export const Information = () => {
        </p>
       </div>
       <picture>
-       <source srcset={nadmobile} media='(max-width:820px)' />
-
-       <img src={nad} alt='' className='information__img' />
+       <source srcSet={'/information/nad-390.png'} media='(max-width:820px)' />
+       <img src={'/information/nad.png'} alt='' className='information__img' />
       </picture>
      </div>
      <div className='information__item'>
@@ -81,9 +74,9 @@ export const Information = () => {
        </p>
       </div>
       <picture>
-       <source srcset={promobile} media='(max-width:820px)' />
+       <source srcSet={'/information/pro-390.png'} media='(max-width:820px)' />
 
-       <img src={pro} alt='' className='information__img' />
+       <img src={'/information/pro.png'} alt='' className='information__img' />
       </picture>
      </div>
     </div>

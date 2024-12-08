@@ -1,4 +1,6 @@
-import consultimg from '../../assets/consultation/tele_2.png';
+import { ConsultationModal } from '../../shared/ui/ConsultationModal/ConsultationModal';
+import { Modal, ModalContent, ModalTrigger } from '../../shared/ui/modal';
+
 export const Consultation = () => {
  return (
   <section className='consultation'>
@@ -19,12 +21,19 @@ export const Consultation = () => {
        просто оставляйте контакты <br />и получайте ответы на запросы
       </span>
      </p>
-     <button className='consultation__button'>Бесплатная консультация</button>
+     <Modal>
+      <ModalTrigger asChild>
+       <button className='consultation__button'>Бесплатная консультация</button>
+      </ModalTrigger>
+      <ModalContent name='popup'>
+       <ConsultationModal />
+      </ModalContent>
+     </Modal>
      <p className='consultation__disclaimer'>
       бесплатная консультация предоставляется исключительно на основании запроса
      </p>
     </div>
-    <img src={consultimg} alt='' className='consultation__img' />
+    <img src='/consultation/tele_2.png' alt='' className='consultation__img' />
    </div>
   </section>
  );

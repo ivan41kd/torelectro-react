@@ -1,4 +1,10 @@
+import { useState } from 'react';
+
 export const Nuances = () => {
+ const [tab, setTab] = useState(undefined);
+ const toggleTab = (index) => {
+  setTab(tab === index ? undefined : index);
+ };
  return (
   <section className='nuances'>
    <div className='nuances__wrapper'>
@@ -9,7 +15,10 @@ export const Nuances = () => {
      Интересные нюансы<span>, которыми интересуются ваши клиенты</span>
     </h1>
     <div className='nuances__items'>
-     <div className='nuances__item'>
+     <div
+      className={tab == 1 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(1)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Причина использования удлинителя с размотанным кабелем
@@ -54,7 +63,10 @@ export const Nuances = () => {
        </div>
       </div>
      </div>
-     <div className='nuances__item'>
+     <div
+      className={tab == 2 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(2)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Причина использования удлинителя с определенным оборудованием
@@ -99,7 +111,10 @@ export const Nuances = () => {
        </div>
       </div>
      </div>
-     <div className='nuances__item'>
+     <div
+      className={tab == 3 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(3)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Разница степени защиты «IP20» и «IP44», применимая на удлинителях,
@@ -141,7 +156,10 @@ export const Nuances = () => {
        </div>
       </div>
      </div>
-     <div className='nuances__item'>
+     <div
+      className={tab == 4 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(4)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Разница сила тока «10А» и «16А», применимая на удлинителях, производимые
@@ -186,7 +204,10 @@ export const Nuances = () => {
      </div>
     </div>
     <div className='nuances__items mobile'>
-     <div className='nuances__item'>
+     <div
+      className={tab == 1 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(1)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Использование удлинителя
@@ -234,7 +255,10 @@ export const Nuances = () => {
        </div>
       </div>
      </div>
-     <div className='nuances__item'>
+     <div
+      className={tab == 2 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(2)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Использование удлинителя
@@ -278,7 +302,10 @@ export const Nuances = () => {
        </div>
       </div>
      </div>
-     <div className='nuances__item'>
+     <div
+      className={tab == 3 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(3)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Разница защиты «IP20» и «IP44»,
@@ -318,7 +345,10 @@ export const Nuances = () => {
        </div>
       </div>
      </div>
-     <div className='nuances__item'>
+     <div
+      className={tab == 4 ? 'nuances__item active' : 'nuances__item'}
+      onClick={() => toggleTab(4)}
+     >
       <div className='nuances__item-header'>
        <p className='nuances__item-name'>
         Разница сила тока «10А» и «16А»,

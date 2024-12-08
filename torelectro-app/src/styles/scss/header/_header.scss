@@ -135,7 +135,7 @@
   color: rgba(240, 240, 240, 1);
   text-align: center;
   width: 205px;
-  padding-left: 17px;
+  padding-left: 15px;
   padding-right: 15px;
   border-radius: 6px;
   text-overflow: ellipsis;
@@ -147,17 +147,17 @@
   cursor: pointer;
  }
  &__phone-icon {
-  width: 17.62px;
+  width: 20.62px;
   height: 23.62px;
   display: flex;
-  -moz-column-gap: 15px;
-  column-gap: 15px;
+  -moz-column-gap: 9px;
+  column-gap: 9px;
  }
  &__phone-icon-wrapper {
   display: flex;
   align-items: center;
-  -moz-column-gap: 10px;
-  column-gap: 10px;
+  -moz-column-gap: 9px;
+  column-gap: 9px;
   &::after {
    content: '';
    width: 10px;

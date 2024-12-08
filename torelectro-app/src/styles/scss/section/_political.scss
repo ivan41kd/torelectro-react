@@ -6,16 +6,13 @@
  position: fixed;
  width: 100%;
  max-width: 100vw;
- padding-top: 0px;
- padding-left: 0;
+ overflow: auto;
  height: 100dvh;
  z-index: 100;
- padding-right: 17px;
- overflow: auto;
+ transform: translateX(0px);
  background: rgba(16, 16, 16, 0.9);
+ padding-left: 13px;
  box-sizing: content-box;
- transform: translateX(17px);
-
  &__wrapper {
   display: flex;
   flex-direction: column;
@@ -75,4 +72,8 @@
    line-height: 8.8px;
   }
  }
+}
+
+.political.transparent {
+ background: transparent;
 }

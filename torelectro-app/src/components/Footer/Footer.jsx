@@ -1,11 +1,14 @@
-import telegaicon from '../../assets/footer/telegram-logo.svg';
-import logo from '../../assets/footer/footer-logo.png';
+import { VacancyModal } from '../../shared/ui/VacancyModal/VacancyModal';
+import { ContactModal } from '../../shared/ui/ContactModal/ContactModal';
+import { Modal, ModalContent, ModalTrigger } from '../../shared/ui/modal';
+import { PoliticalModal } from '../../shared/ui/PoliticalModal/PoliticalModal';
+import { DocumentationModal } from '../../shared/ui/DocumentationModal/DocumentationModal';
 export const Footer = () => {
  return (
   <footer className='footer'>
    <div className='footer__wrapper'>
     <div className='footer__logo-wrapper'>
-     <img src={logo} className='footer__logo' alt='' />
+     <img src={'/footer/footer-logo.png'} className='footer__logo' alt='' />
     </div>
     <div className='footer__info'>
      <nav className='footer__nav'>
@@ -21,11 +24,33 @@ export const Footer = () => {
        </li>
       </ul>
       <ul className='footer__info-items'>
-       <li className='footer__info-item footer-vacancy'>Вакансия</li>
-       <li className='footer__info-item footer-document'>Документация</li>
-       <li className='footer__info-item footer-contact'>
-        Контактная информация
-       </li>
+       <Modal>
+        <ModalTrigger asChild>
+         <li className='footer__info-item footer-vacancy'>Вакансия</li>
+        </ModalTrigger>
+        <ModalContent name='vacancy'>
+         <VacancyModal />
+        </ModalContent>
+       </Modal>
+       <Modal>
+        <ModalTrigger asChild>
+         <li className='footer__info-item footer-document'>Документация</li>
+        </ModalTrigger>
+        <ModalContent name='documentation'>
+         <DocumentationModal />
+        </ModalContent>
+       </Modal>
+
+       <Modal>
+        <ModalTrigger asChild>
+         <li className='footer__info-item footer-contact'>
+          Контактная информация
+         </li>
+        </ModalTrigger>
+        <ModalContent name='contacts'>
+         <ContactModal />
+        </ModalContent>
+       </Modal>
       </ul>
      </nav>
      <div className='footer__socials'>
@@ -39,7 +64,11 @@ export const Footer = () => {
       </div>
       <div className='footer__telegram'>
        <a href='https://t.me/+79160833930'>
-        <img src={telegaicon} alt='' className='footer__telegram-icon' />
+        <img
+         src={'/footer/telegram-logo.svg'}
+         alt=''
+         className='footer__telegram-icon'
+        />
        </a>
       </div>
      </div>
@@ -52,9 +81,16 @@ export const Footer = () => {
      определяемой действующим российским законодательством
     </p>
     <div className='footer__docs'>
-     <p className='footer__docs-item footer-political'>
-      Политика конфиденциальности
-     </p>
+     <Modal>
+      <ModalTrigger asChild>
+       <p className='footer__docs-item footer-political'>
+        Политика конфиденциальности
+       </p>
+      </ModalTrigger>
+      <ModalContent name='political'>
+       <PoliticalModal />
+      </ModalContent>
+     </Modal>
      <p className='footer__docs-item'>ООО «ТОРЭЛЕКТРО» · 1245000026600</p>
     </div>
     <div className='footer__map'>
@@ -63,7 +99,7 @@ export const Footer = () => {
        src='https://yandex.com/map-widget/v1/?um=constructor%3A4208a45148ad864e53373df2efc7c84c6db1ba357b67f8adcb3971c81760af9a&amp;source=constructor'
        width='100%'
        height='150'
-       frameborder='0'
+       frameBorder='0'
       ></iframe>
      </div>
     </div>

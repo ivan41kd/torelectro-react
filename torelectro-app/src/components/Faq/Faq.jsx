@@ -1,12 +1,24 @@
+import { useState } from 'react';
+
 export const Faq = () => {
+ const [tab, setTab] = useState(undefined);
+
+ const toggleTab = (index) => {
+  setTab(tab === index ? undefined : index);
+ };
+
  return (
   <section className='faq' id='faq'>
    <div className='faq__wrapper'>
     <h1 className='faq__title'>
      <span>Популярные вопросы</span>, которыми часто задаются наши клиенты
     </h1>
+
     <div className='faq__questions'>
-     <div className='faq__question'>
+     <div
+      className={tab == 1 ? 'faq__question active' : 'faq__question'}
+      onClick={() => toggleTab(1)}
+     >
       <div className='faq__question-header'>
        <p className='faq__question-name'>Имеется ли доставка?</p>
 
@@ -37,7 +49,10 @@ export const Faq = () => {
        </div>
       </div>
      </div>
-     <div className='faq__question'>
+     <div
+      className={tab == 2 ? 'faq__question active' : 'faq__question'}
+      onClick={() => toggleTab(2)}
+     >
       <div className='faq__question-header'>
        <p className='faq__question-name'>Имеется ли партнерская скидка?</p>
        <svg
@@ -65,7 +80,10 @@ export const Faq = () => {
        </div>
       </div>
      </div>
-     <div className='faq__question'>
+     <div
+      className={tab == 3 ? 'faq__question active' : 'faq__question'}
+      onClick={() => toggleTab(3)}
+     >
       <div className='faq__question-header'>
        <p className='faq__question-name'>
         Какое количество удлинителей необходимо для приобретения?
@@ -100,7 +118,10 @@ export const Faq = () => {
       </div>
      </div>
 
-     <div className='faq__question'>
+     <div
+      className={tab == 4 ? 'faq__question active' : 'faq__question'}
+      onClick={() => toggleTab(4)}
+     >
       <div className='faq__question-header'>
        <p className='faq__question-name'>
         Какое количество дней необходимо для изготовления?

@@ -1,33 +1,20 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { products } from '../../data/products';
 import { CatalogCard } from '../CatalogCard/CatalogCard';
-let swiper;
+import { Navigation } from 'swiper/modules';
 
-const initSlider = () => {
- if (swiper) {
-  swiper.destroy(true, true);
- }
-
- swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 20,
-  initialSlide: 0,
-  navigation: {
-   prevEl: '.catalog__prev-icon',
-   nextEl: '.catalog__next-icon',
-  },
-  scrollbar: {
-   el: '.swiper-scrollbar',
-  },
- });
-};
+import 'swiper/css/navigation';
+import 'swiper/css';
 
 export const Catalog = () => {
+ const sliderRef = useRef(null);
  const [tab, setTab] = useState(0);
+ useEffect(() => {
+  if (sliderRef.current) {
+   sliderRef.current.slideTo(0);
+  }
+ }, [tab]);
  return (
   <section className='catalog' id='catalog'>
    <h1 className='catalog__title'>
@@ -64,7 +51,12 @@ export const Catalog = () => {
         </div>
        </div>
       </div>
-      <button className='catalog__category-button' onClick={() => setTab(0)}>
+      <button
+       className='catalog__category-button'
+       onClick={() => {
+        setTab(0);
+       }}
+      >
        УПВС
       </button>
      </div>
@@ -97,7 +89,12 @@ export const Catalog = () => {
         </div>
        </div>
       </div>
-      <button className='catalog__category-button' onClick={() => setTab(1)}>
+      <button
+       className='catalog__category-button'
+       onClick={() => {
+        setTab(1);
+       }}
+      >
        УКГТП ХЛ
       </button>
      </div>
@@ -136,22 +133,28 @@ export const Catalog = () => {
      <Swiper
       loop={true}
       spaceBetween={20}
+      modules={[Navigation]}
       slidesPerView={1}
-      initialSlide={0}
       width={350}
-      centeredSlides={true}
       breakpoints={{ 820: { slidesPerView: 3, width: 1180 } }}
       className='catalog__cards'
       wrapperClass='catalog__cards-wrapper'
       navigation={{
-       nextEl: 'catalog__next-icon',
-       prevEl: 'catalog__prev-icon',
+       enabled: true,
+       nextEl: '.catalog__next-icon',
+       prevEl: '.catalog__prev-icon',
+      }}
+      onSwiper={(swiper) => {
+       sliderRef.current = swiper;
       }}
      >
-      {products[tab].items.map((product, index) => {
+      {products[tab].items.map((product, i) => {
        return (
-        <SwiperSlide className='catalog__card'>
-         <CatalogCard product={product} />
+        <SwiperSlide
+         key={`catalog-card-${product.name}-${i}`}
+         className='catalog__card'
+        >
+         <CatalogCard product={product} items={products[tab].items} index={i} />
         </SwiperSlide>
        );
       })}
